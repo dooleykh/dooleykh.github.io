@@ -1,1 +1,41 @@
-<h1>May the Force be with you</h1>
+<html>
+<head>
+  <link rel="stylesheet" href="css/swrpg-dice-simulator.css">
+  <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</head>
+<body>  
+  <div id="box">
+    <h1>May the Force be with you!</h1>
+    <div id="dice">
+      <div class="dieDiv">
+        <div id="green" class="die"></div>
+        <input type="number" min="0" value="0" id="greenCount">
+      </div>
+      <div class="dieDiv">
+        <div id="yellow" class="die"></div>
+        <input type="number" min="0" value="0" id="yellowCount">
+      </div>
+      <div class="dieDiv">
+        <div id="purple" class="die"></div>
+        <input type="number" min="0" value="0" id="purpleCount">
+      </div>
+      <div class="dieDiv">
+        <div id="red" class="die"></div>
+        <input type="number" min="0" value="0" id="redCount">
+      </div>
+      <div class="dieDiv">
+        <div id="blue" class="die"></div>
+        <input type="number" min="0" value="0" id="blueCount">
+      </div>
+      <div class="dieDiv">
+        <div id="black" class="die"></div>
+        <input type="number" min="0" value="0" id="blackCount">
+      </div>
+    </div>
+    <label for="Trials">Trials</label><input type="number" min="0" value="1000000" id="trialCount">
+    <input type="button" value="Start Trials" id="startTrials">
+    <div class="chart" id="chart"></div>
+  </div>
+</body>
+<script src="js/swrpg/simulate.js"></script>
+<html>
